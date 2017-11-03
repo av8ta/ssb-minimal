@@ -5,7 +5,7 @@ A minimal way to get started talking to ssb on a testnet
 Create a .ssb-test folder alongside your .ssb folder in HOME
 
 Create a config file (no file extension) with:
-
+```json
 {
   "caps": {
     "shs": "MVZDyNf1TrZuGv3W5Dpef0vaITW1UqOUO3aWLNBp+7A=",
@@ -22,6 +22,7 @@ Create a config file (no file extension) with:
     "ssb-fulltext": true
   }
 }
+```
 
 shs and sign are the keys I'm using for a testnet. By setting sign, the network can not be linked to the mainnet. Setting sign to null means your network could 'join' or 'leak' to the mainnet, depending on how you perceive that!
 
