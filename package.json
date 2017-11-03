@@ -1,0 +1,24 @@
+{
+  "name": "ssb-minimal",
+  "version": "0.0.1",
+  "description": "minimal node scuttlebot client",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "set -e; for t in test/*.js; do node $t; done"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/av8ta/ssb-minimal.git"
+  },
+  "dependencies": {
+    "ssb-client": "^4.5.1"
+  },
+  "devDependencies": {},
+  "author": "av8ta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/av8ta/ssb-minimal/issues"
+  },
+  "homepage": "https://github.com/av8ta/ssb-minimal"
+}
