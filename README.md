@@ -1,6 +1,6 @@
 # ssb-minimal
 
-A minimal way to get started talking to ssb on a testnet
+A minimal way to get started talking to ssb on a testnet. Assumes you have already [installed sbot globally](https://ssbc.github.io/docs/scuttlebot/install.html) to develop with.
 
 Create a .ssb-test folder alongside your .ssb folder in HOME
 
@@ -23,7 +23,6 @@ Create a config file (no file extension) with:
   }
 }
 ```
-
 shs and sign are the keys I'm using for a testnet. By setting sign, the network can not be linked to the mainnet. Setting sign to null means your network could 'join' or 'leak' to the mainnet, depending on how you perceive that!
 
 Terminal: set ssb_appname env variable. Make sure each terminal you use has the environment variable set
@@ -35,6 +34,13 @@ $env:ssb_appname="ssb-test"
 bash
 ```bash
 set ssb_appname="ssb-test"
+```
+
+Ensure you have those plugins installed to your sbot. If they are not installed already, do this:
+```
+sbot plugins.install ssb-about
+sbot plugins.install ssb-backlinks
+sbot plugins.install ssb-fulltext
 ```
 
 Different terminal:
